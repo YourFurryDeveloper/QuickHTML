@@ -71,8 +71,8 @@ function loadCode() {
     fileInput.click();
 };
 
-window.onload(function() {
+window.onload = (event) => {
     setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
-})
+};
 
 document.previewarea.document.body.height = "100%";
