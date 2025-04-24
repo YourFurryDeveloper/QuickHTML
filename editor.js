@@ -27,7 +27,8 @@ require(['vs/editor/editor.main'], function() {
     function onInputChanged() {
         const value = editor.getValue();
         fullCode = value;
-        document.getElementById("previewarea").write(value);
+        //document.getElementById("previewarea").innerHTML = value;
+        document.previewarea.document.write(value);
     }
 
     editor.onDidChangeModelContent(onInputChanged);
