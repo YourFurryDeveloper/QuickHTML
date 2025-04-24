@@ -27,6 +27,7 @@ require(['vs/editor/editor.main'], function() {
     function onInputChanged() {
         const value = editor.getValue();
         fullCode = value;
+        localStorage.setItem("qhtm.lastCodeSave", value);
         //document.getElementById("previewarea").innerHTML = value;
         document.previewarea.document.body.innerHTML = value;
     }
@@ -37,6 +38,8 @@ require(['vs/editor/editor.main'], function() {
 function setEditorCode(codevalue) {
     editor.setValue(codevalue);
 }
+
+setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
 
 function saveCode() {
     const textBoxContent = fullCode;
