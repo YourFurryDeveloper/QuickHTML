@@ -39,8 +39,6 @@ function setEditorCode(codevalue) {
     editor.setValue(codevalue);
 }
 
-setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
-
 function saveCode() {
     const textBoxContent = fullCode;
     const blob = new Blob([textBoxContent], { type: 'text/plain' });
@@ -72,5 +70,7 @@ function loadCode() {
 
     fileInput.click();
 };
+
+setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
 
 document.previewarea.document.body.height = "100%";
