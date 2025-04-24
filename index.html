@@ -15,6 +15,7 @@
             <div id="toolbarbtns">
                 <button class="toolbarbtn" id="toolbarbtn" onclick="openToolbarMenu('file')">File</button>
                 <button class="toolbarbtn" id="toolbarbtn">Edit</button>
+                <button class="toolbarbtn" id="toolbarbtn" onclick="openToolbarMenu('tools')">Tools</button>
                 <button class="toolbarbtn" id="toolbarbtn" onclick="openToolbarMenu('info')">Info</button>
             </div>
         </div>
@@ -23,7 +24,10 @@
             <div id="toolbarmenus">
                 <div id="filemenu">
                     <button id="toolbarmenubtn" onclick="saveCode()">Save</button>
-                    <button id="toolbarmenubtn" onclick="loadCode()">Load</button>
+                    <button id="toolbarmenubtn" onclick="loadCode()">Open</button>
+                </div>
+                <div id="toolmenu">
+                    <button id="toolbarmenubtn" onclick="saveCode()">Preview in new tab</button>
                 </div>
             </div>
 
