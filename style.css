@@ -143,11 +143,11 @@ html {
 }
 
 iframe {
-    position: fixed;
-    top: 40px;
-    bottom: 0;
-    right: 0;
-    width: calc(100% - 640px);
-    outline: none;
+    position: fixed !important;
+    top: 40px !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: calc(100% - 640px) !important;
+    outline: none !important;
     border: none !important;
 }
