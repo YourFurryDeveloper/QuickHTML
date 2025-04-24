@@ -1,0 +1,152 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+}
+
+#toolbarbtns {
+    width: fit-content;
+    height: 40px;
+    float: left;
+    display: block;
+}
+
+.toolbarbtn {
+    margin-top: 6px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#filemenu {
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 40px;
+    margin-left: 5px;
+    width: 100px;
+    height: 50px;
+
+    display: none;
+}
+
+#toolbarmenubtn {
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer; 
+    width: inherit;
+    text-align: left;
+}
+
+#toolbarmenubtn:hover {
+    background-color: rgb(83, 83, 83);  
+}
+
+#closeDialogBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#closeDialogBtn:hover {
+    background-color: rgba(215, 215, 215, 0.537);
+}
+
+#closeDialogBtn:active {
+    background-color: rgb(215, 215, 215);
+}
+
+.toolbarbtn:hover {
+    background-color: rgb(65, 65, 77);
+}
+
+#infoBox {
+    z-index: 1000;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+#mainbody {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+#txteditor {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 629px;
+}
+
+.monaco-editor.no-user-select.mac.showUnused.showDeprecated.vs {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 629px;
+}
+
+#codebox {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 629px;
+    outline: none;
+    resize: none;
+    padding: 5px;
+    display: none;
+}
+
+#previewarea {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 640px);
+    outline: none;
+}
+
+iframe {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 640px);
+    outline: none;
+    border: none !important;
+}
