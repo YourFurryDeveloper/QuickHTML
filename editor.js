@@ -71,6 +71,10 @@ function loadCode() {
     fileInput.click();
 };
 
+function openOutputTab() {
+    window.open("fullscreenoutput.html", "_blank");
+}
+
 window.onload = (event) => {
     setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
 };
