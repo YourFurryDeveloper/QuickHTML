@@ -28,5 +28,6 @@ document.addEventListener("click", function(e) {
     if (e.target.id !== "toolbarmenubtn" && e.target.id !== "toolbarbtn") {
         console.log(e.target.id)
         document.getElementById("filemenu").style.display = "none";
+        document.getElementById("toolmenu").style.display = "none";
     }
 })
