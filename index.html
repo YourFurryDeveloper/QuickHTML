@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>QuickHTML V1.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.js"></script>
+        <script src="editor.js"></script>
+        <script src="menus.js"></script>
+    </head>
+
+    <body>
+        <div id="toolbar">
+            <div id="toolbarbtns">
+                <button class="toolbarbtn" id="toolbarbtn" onclick="openToolbarMenu('file')">File</button>
+                <button class="toolbarbtn" id="toolbarbtn">Edit</button>
+                <button class="toolbarbtn" id="toolbarbtn" onclick="openToolbarMenu('info')">Info</button>
+            </div>
+        </div>
+
+        <div id="mainbody">
+            <div id="toolbarmenus">
+                <div id="filemenu">
+                    <button id="toolbarmenubtn" onclick="saveCode()">Save</button>
+                    <button id="toolbarmenubtn" onclick="loadCode()">Load</button>
+                </div>
+            </div>
+
+            <dialog id="infoBox">
+                <h3 style="text-align: center;">QuickHTML</h3>
+                <p style="text-align: center;">Made with ❤️ by YourFurryDeveloper on GitHub :3</p>
+                <br>
+                <button id="closeDialogBtn" onclick="closeToolbarMenu('info')">Close</button>
+            </dialog>
+            <div id="txteditor">
+            </div>
+
+            <iframe src="javascript:''" name="previewarea" id="previewarea" style="position: fixed; top: 40px; bottom: 0; right: 0; width: calc(100% - 640px); outline: none; border: none !important;" seamless>
+            </iframe>
+            <!--<div id="previewarea">
+            </div>-->
+        </div>
+    </body>
+</html>
