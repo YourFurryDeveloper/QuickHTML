@@ -71,7 +71,7 @@ function loadCode() {
     fileInput.click();
 };
 
-document.onload(function() {
+window.onload(function() {
     setEditorCode(localStorage.getItem("qhtm.lastCodeSave"));
 })
 
