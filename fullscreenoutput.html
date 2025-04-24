@@ -4,12 +4,14 @@
     <head>
         <title>QuickHTML Output Tab</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script>
-            let loadedCode = localStorage.getItem("qhtm.lastCodeSave");
-            document.body.innerHTML = loadedCode;
-        </script>
     </head>
 
-    <body>
+    <body onload="update()">
+        <script>
+            function update() {
+                let loadedCode = localStorage.getItem("qhtm.lastCodeSave");
+                document.body.innerHTML = loadedCode;
+            }
+        </script>
     </body>
 </html>
