@@ -69,3 +69,5 @@ function loadCode() {
 
     fileInput.click();
 };
+
+document.previewarea.document.body.height = "100%";
