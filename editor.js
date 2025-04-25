@@ -29,10 +29,9 @@ require(['vs/editor/editor.main'], function() {
         fullCode = value;
         localStorage.setItem("qhtm.lastCodeSave", value);
         //document.previewarea.document.body.innerHTML = value;
-        doc = previewarea.document;
-        doc.open();
-        doc.write(value);
-        doc.close();
+        previewarea.document.open();
+        previewarea.document.write(value);
+        previewarea.document.close();
     }
 
     editor.onDidChangeModelContent(onInputChanged);
