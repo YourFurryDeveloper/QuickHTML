@@ -28,8 +28,10 @@ require(['vs/editor/editor.main'], function() {
         const value = editor.getValue();
         fullCode = value;
         localStorage.setItem("qhtm.lastCodeSave", value);
-        document.previewarea.document.body.innerHTML = value;
-        //document.previewarea.srcdoc = value;
+        //document.previewarea.document.body.innerHTML = value;
+        document.previewarea.contentDocument.open();
+        document.previewarea.contentDocument.write(value);
+        document.previewarea.contentDocument.close();
     }
 
     editor.onDidChangeModelContent(onInputChanged);
